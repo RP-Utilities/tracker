@@ -1,27 +1,42 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: bug-unverified
-assignees: ''
+name: Bug Report
+description: Create a report to see it being fixed
+labels: ["bug"]
+body:
+  - type: textarea
+    attributes:
+      label: Describe the issue
+      description: A clear and concise description of what the issue is
+    validations:
+      required: true
 
----
+  - type: textarea
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behaviour
+      placeholder: "1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '.....'
+        4. See error"
+    validations:
+      required: false
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+  - type: textarea
+    attributes:
+      label: Expected Behaviour
+      description: What were you expecting to happen?
+    validations:
+      required: false
 
-**To Reproduce**
-Steps to reproduce the behavior:
+  - type: textarea
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem
+    validations:
+      required: false
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**If possible**
- - NodeJS version:
- - Bot version:
-
-**Additional context**
-Add any other context about the problem here.
+  - type: textarea
+    attributes:
+      label: Additional Information
+      description: Add more information about the problem if necessary
+    validations:
+      required: false
