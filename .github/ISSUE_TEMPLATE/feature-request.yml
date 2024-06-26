@@ -1,20 +1,48 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
----
-
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
-
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
-
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+{
+  "name": "Feature Request",
+  "description": "Submit a request for a new feature",
+  "labels": ["feature"],
+  "body": [
+    {
+      "type": "textarea",
+      "attributes": {
+        "label": "Describe the feature",
+        "description": "A clear and concise description of what the feature should do"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "attributes": {
+        "label": "User Story",
+        "description": "Describe the feature from the perspective of the user",
+        "placeholder": "As a [type of user], I want to [perform some task] so that I can [achieve some goal]"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "attributes": {
+        "label": "Benefits",
+        "description": "Explain the benefits of the feature and why it should be added"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "attributes": {
+        "label": "Additional Information",
+        "description": "Add any additional information or context that might be useful"
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}
