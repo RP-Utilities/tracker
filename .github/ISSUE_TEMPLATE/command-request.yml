@@ -1,17 +1,48 @@
----
-name: Command Request
-about: Suggest a command for this project
-title: ''
-labels: cmd-request
-assignees: ''
-
----
-
-**Is your command request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
-
-**Describe what command you'd like**
-A clear and concise description of what you want to happen.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+{
+  "name": "Command Request",
+  "description": "Submit a request for a new command",
+  "labels": ["command"],
+  "body": [
+    {
+      "type": "textarea",
+      "attributes": {
+        "label": "Describe the command",
+        "description": "A clear and concise description of what the command should do"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "attributes": {
+        "label": "Usage Example",
+        "description": "Provide an example of how the command would be used",
+        "placeholder": "e.g., !command [arguments]"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "attributes": {
+        "label": "Expected Output",
+        "description": "Describe the expected output or behavior of the command"
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "attributes": {
+        "label": "Additional Information",
+        "description": "Add any additional information or context that might be useful"
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}
